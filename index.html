@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhang Jinghao - Designer & Visual Artist</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Hero / About -->
+    <nav class="top-nav">
+        <div class="nav-brand">Portfolio</div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#works">Works</a>
+            <a href="#" onclick="openContact();return false;">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="about">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+
+        <div class="hero-left">
+            <h1 class="hero-title">Zhang Jinghao</h1>
+            <p class="hero-subtitle">Designer & Visual Artist</p>
+            <p class="hero-desc">
+                专注于品牌视觉与创意设计，涵盖品牌识别、广告创意、3D 渲染与商业摄影领域。以简约克制的设计语言，在每一个像素中传递信息与美感。
+            </p>
+            <div class="hero-actions">
+                <a href="#" class="hero-btn-primary" onclick="openContact();return false;">联系我</a>
+                <a href="#works" class="hero-btn-secondary">查看作品</a>
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <div class="hero-img-wrap">
+                <img src="作品/练习15.png" alt="Zhang Jinghao">
+                <div class="hero-badge">Zhang<br>Jing<br>Hao</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Works Section -->
+    <div id="works">
+        <div class="header">
+            <h1>Portfolio</h1>
+            <div class="line"></div>
+        </div>
+
+        <!-- Carousel -->
+        <div class="carousel-wrap">
+            <div class="carousel-viewport">
+                <div class="carousel-track" id="carousel-track">
+                    <div class="carousel-slide"><img src="作品/高效热管理-春天.jpg" alt="高效热管理-春天"></div>
+                    <div class="carousel-slide"><img src="作品/111.png" alt="练习5"></div>
+                    <div class="carousel-slide"><img src="作品/练习15.png" alt="练习15"></div>
+                    <div class="carousel-slide"><img src="作品/练习18.png" alt="练习18"></div>
+                    <div class="carousel-slide"><img src="作品/练习7.png" alt="练习7"></div>
+                    <div class="carousel-slide"><video src="作品/练习视频4.mp4" style="max-width:100%;max-height:100%;object-fit:contain;" muted loop></video></div>
+                </div>
+            </div>
+            <button class="carousel-btn carousel-btn-prev" id="carousel-prev"></button>
+            <button class="carousel-btn carousel-btn-next" id="carousel-next"></button>
+            <div class="carousel-dots" id="carousel-dots"></div>
+        </div>
+
+        <div class="masonry" id="gallery"></div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lb-close" id="lb-close"></button>
+        <button class="lb-nav lb-prev" id="lb-prev"></button>
+        <button class="lb-nav lb-next" id="lb-next"></button>
+        <div class="lb-content" id="lb-content"></div>
+        <div class="lb-filename" id="lb-filename"></div>
+        <div class="lb-counter" id="lb-counter"></div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
